@@ -1,5 +1,6 @@
 package com.deepak.razorpay.operations.entity;
 
+import com.deepak.razorpay.common.entity.BaseEntity;
 import jakarta.persistence.*;
 
 @Entity

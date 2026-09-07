@@ -20,7 +20,8 @@ public class AuthController {
     private final AuthService authService;
 
     @PostMapping(path = "/signup")
-    public ResponseEntity<MerchantResponse> signup(@RequestBody @Valid MerchantSignUpRequest request) {
+    public ResponseEntity<MerchantResponse> signup(@RequestBody
+                                                       @Valid MerchantSignUpRequest request) {
         return ResponseEntity.status(HttpStatus.CREATED)
                 .body(authService.signup(request));
     }

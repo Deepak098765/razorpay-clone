@@ -79,7 +79,8 @@ public class PaymentServiceImpl implements PaymentService {
             }
 
             case PaymentResult.Success success-> {
-
+                log.warn("Invalid state");
+                return null;
             }
         }
 
